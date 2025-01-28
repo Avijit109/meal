@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Website</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- --------font awesome cdn------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- ------header start------------------ -->
+    <header>
+        <nav class="navbar absolute z-50 w-full h-full">
+            <div class="container mx-auto p-4 flex flex-col md:flex-row items-start md:items-center justify-between">
+                <div class="logo-part flex items-center w-full md:w-auto justify-between">
+                    <div class="logo">
+                        <a href="#"><img src="./image/nav-logo.png" alt="nav_logo" class="h-10"></a>
+                    </div>
+                    <!-------------- hamburger menu icon----------------- -->
+                    <div class="icon block md:hidden" id="toggler">
+                        <i class="fa-solid fa-bars text-2xl cursor-pointer"></i>
+                    </div>
+                </div>
+
+                <!-- -------------navigation links ------------------>
+                <ul
+                    class="nav-links list-none no-underline bg-[#ed7d70] mt-4 md:mt-0 flex flex-col md:bg-transparent md:flex-row items-start md:items-center w-full md:w-auto hidden md:flex">
+                    <li class="py-1 md:py-0 md:mx-4"><a href="#" class="text-base font-normal hover:text-blue-500">Our
+                            Plans</a></li>
+                    <li class="py-1 md:py-0 md:mx-4"><a href="#" class="text-base font-normal hover:text-blue-500">About
+                            Us</a></li>
+                    <li class="py-1 md:py-0 md:mx-4"><a href="#"
+                            class="text-base font-normal hover:text-blue-500">Blog</a></li>
+                    <li class="py-1 md:py-0 md:mx-4"><a href="#"
+                            class="text-base font-normal hover:text-blue-500">FAQ</a></li>
+                    <li class="py-1 md:py-0 md:mx-4"><a href="#"
+                            class="text-base font-normal hover:text-blue-500">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- -------------header end------------------- -->
+    <!-- -------main start-------------- -->
+    <!-- ---------banner section start------------ -->
+    <section class="banner relative h-screen flex items-center justify-items-start" id="hero">
+        <div class="container mx-auto w-full px-6 sm:px-10  md:px-16 lg:px-20">
+            <div
+                class="banner-child-area h-auto w-full flex flex-col justify-center items-center text-center md:items-start md:text-left">
+                <div class="heading flex flex-col items-center sm:items-center md:items-start w-full sm:w-full">
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl leading-snug font-light w-full sm:w-full md:w-86">
+                        Welcome to Vegetarian Life!
+                    </h1>
+                    <span class="font-medium text-xl sm:text-2xl lg:text-4xl leading-tight text-yellow-500 block mt-4">
+                        Pre-Made Meals
+                    </span>
+                    <div class="button-area w-fit pt-5">
+                        <a href="#"
+                            class="pb-3.5 pt-3.5 px-6 mt-7 inline-block border border-yellow-500 rounded shadow-[4px_2px_4px_0px_#FBDA40] hover:bg-yellow-500 hover:text-white transition">
+                            Get Started
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- ------------container end-------------------- -->
+        </div>
+        <div
+            class="banner-image w-[50%] absolute top-[75%] left-[25%] sm:top-[75%] sm:left-[35%] sm:w-[30%] md:top-[20%] md:left-[35%] md:w-[60%] lg:top-[20%] lg:left-[43%] lg:w-[50%] xl:top-[20%] xl:left-[52%] xl:w-[40%] 2xl:top-[20%] 2xl:left-[52%] z-50 translate rotate-0 md:-rotate-45 xl:-rotate-45">
+            <img src="./image/banner-image/img-1.png" alt="img_1" class="w-full h-auto block">
+        </div>
+
+        <div class="image absolute -z-50 left-0 top-0">
+            <figure>
+                <img src="./image/Vector.png" alt="vec_img" class="w-full xs:w-3xs sm:w-20 md:w-24 lg:w-26">
+            </figure>
+        </div>
+        <div class="another-image absolute top-0 right-0 -z-50">
+            <figure>
+                <img src="./image/another-img.png" alt="img_1" class="block w-20 sm:w-24 md:w-full lg:w-full">
+            </figure>
+        </div>
+    </section>
+
+    <!-- ---------banner section end------------ -->
+
+    <!-- -------work section start-------------- -->
+    <section class="work w-full relative">
+        <div class="container mx-auto xs: px-6 md:px-16 lg:px-20">
+            <div class="row flex flex-col items-center justify-center">
+                <div class="heading flex flex-col items-center justify-center xs:w-full lg:w-6/12">
+                    <h2 class="font-medium text-4xl leading-[65px] text-center">How it works?</h2>
+                    <p class="text-xl font-medium xs: text-center">This is how we ensure you get fresh pre-made
+                        meal</p>
+                </div>
+                <div
+                    class="work-layout flex items-center justify-between xs:w-1/2 flex-wrap gap-y-5 md:flex-wrap gap-x-5 lg:w-full pt-16 pb-8">
+                    <div class="card xs:w-1/4 md:w-[46%] lg:w-[23%]">
+                        <figure class="shadow-[4px_4px_22px_0px_#0000001A] rounded">
+                            <img src="./image/work-image/img-1.png" alt="img_1" class="block">
+                        </figure>
+                        <p class="text-base font-normal leading-6  xs:w-full lg:w-6/12 pt-2">Sourced fresh from
+                            the farm</p>
+                    </div>
+                    <div class="card xs:w-1/4 md:w-[46%] lg:w-[23%]">
+                        <figure class="shadow-[4px_4px_22px_0px_#0000001A] rounded">
+                            <img src="./image/work-image/img-2.jpg" alt="img_2" class="block">
+                        </figure>
+                        <p class="text-base font-normal leading-6 xs:w-full lg:w-6/12 pt-2">We clean and cut it
+                        </p>
+                    </div>
+                    <div class="card xs:w-1/4 md:w-[46%] lg:w-[23%]">
+                        <figure class="shadow-[4px_4px_22px_0px_#0000001A] rounded">
+                            <img src="./image/work-image/img-3.jpg" alt="img_3" class="block">
+                        </figure>
+                        <p class="text-base font-normal leading-6 xs:w-full lg:w-6/12 pt-2">We customise as per
+                            recipe</p>
+                    </div>
+                    <div class="card xs:w-1/4 md:w-[46%] lg:w-[23%]">
+                        <figure class="shadow-[4px_4px_22px_0px_#0000001A] rounded">
+                            <img src="./image/work-image/img-4.jpg" alt="img_4" class="block">
+                        </figure>
+                        <p class="text-base font-normal leading-6 xs:w-full lg:w-6/12 pt-2">We pack it and
+                            deliver it</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="image absolute z-10 right-0 bottom-[50%]">
+            <figure>
+                <img src="./image/Cucumber group.png" alt="coco_img" class="block">
+            </figure>
+        </div>
+    </section>
+    <!-- -------work section end-------------- -->
+
+    <!-- -------who section start----------------- -->
+    <section class="who relative w-full">
+        <div class="container mx-auto px-6 sm:px-10 md:px-16 lg:px-20">
+            <div class="who-child flex flex-col-reverse md:flex-row justify-between gap-y-12 md:gap-x-12">
+                <div class="heading w-full md:w-6/12 py-12 md:py-32 text-center md:text-left">
+                    <h2 class="font-medium text-3xl sm:text-4xl lg:text-5xl md:leading-[65px]">
+                        Who we are
+                    </h2>
+                    <p
+                        class="pt-4 sm:pt-6 text-sm sm:text-base font-normal leading-6 md:leading-7 w-full md:w-3/4 mx-auto md:mx-0 text-[#0B0A0A]">
+                        Frezmeal provides freshly sourced vegetarian pre-made recipe kits of different cuisines
+                        at your
+                        doorstep. We source everything from the farms and our chefs prepare different recipes
+                        ensuring
+                        nutrition, portion, and quality.
+                    </p>
+                    <div class="button-area w-fit mx-auto md:mx-0">
+                        <a href="#"
+                            class="pb-3.5 pt-3.5 px-6 mt-7 inline-block border border-yellow-500 rounded shadow-[4px_2px_4px_0px_#FBDA40] hover:bg-yellow-500 hover:text-white transition">
+                            Know More
+                        </a>
+                    </div>
+                </div>
+
+                <!-- -----image part ------------>
+                <div class="image w-full md:w-6/12 pt-12 md:pt-52 pb-8 md:pb-24 text-center">
+                    <figure>
+                        <img src="./image/who-image/img-1.jpg" alt="img_1" class="block w-full h-auto">
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <!-- -----------repeat image------------- -->
+        <div class="image absolute z-10 left-1/4 sm:left-1/3 bottom-[30%] md:bottom-[45%] lg:bottom-[40%]">
+            <figure>
+                <img src="./image/repeat-image.png" alt="coco_img" class="block w-16 sm:w-20 md:w-48 lg:w-48 xl:w-48">
+            </figure>
+        </div>
+    </section>
+
+    <!-- -------who section end----------------- -->
+
+    <!-- --------menu section start--------------- -->
+    <section class="menu relative w-full">
+        <div class="container mx-auto px-6 sm:px-10 md:px-16 lg:px-20">
+            <div class="row">
+                <!----------- heading area------------ -->
+                <div class="heading w-full md:w-3/4 text-center md:text-left">
+                    <h2 class="font-medium text-3xl sm:text-4xl lg:text-5xl md:leading-[65px]">
+                        Frezmeal Menu
+                    </h2>
+                    <p
+                        class="pt-4 sm:pt-6 text-sm sm:text-base font-normal leading-6 md:leading-7 w-full md:w-3/4 mx-auto md:mx-0 text-[#0B0A0A]">
+                        We have different meals every day, and you can customize your meals as per your
+                        requirements.
+                    </p>
+                    <p
+                        class="text-sm sm:text-base font-normal leading-6 md:leading-7 w-full md:w-3/4 mx-auto md:mx-0 text-[#0B0A0A]">
+                        We cater to the following categories:
+                    </p>
+                </div>
+
+                <!-- -----------menu row 1 ------------------->
+                <div class="menu-1 bg-white pt-8 flex flex-wrap justify-center md:justify-between gap-6 md:gap-x-5">
+                    <!-- --------------Card 1 ------------------>
+                    <div
+                        class="card pt-6 pb-5 w-full sm:w-[100%] md:w-[48%] lg:w-[47%] rounded-xl backdrop-blur-sm shadow-md flex flex-col items-center">
+                        <div class="img w-11/12 h-72">
+                            <figure class="w-full h-full">
+                                <img src="./image/menu-image/img-1.jpg" alt="Fruit Salad"
+                                    class="rounded-xl w-full h-full object-cover block">
+                            </figure>
+                        </div>
+                        <div class="card-body pt-5 flex justify-between w-4/5">
+                            <div class="card-heading">
+                                <h3 class="font-medium text-lg sm:text-xl leading-7">Fruit Salad</h3>
+                                <p class="pt-2 font-normal text-sm text-[#7E7D7A]">
+                                    Freshly sourced fruits from farms
+                                </p>
+                            </div>
+                            <div class="icon text-center">
+                                <p class="font-bold text-lg sm:text-2xl">$2</p>
+                                <a href="#" class="inline-block mt-2 p-3 bg-[#FF902B] rounded-full text-white">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--------------------- Card 2 ------------->
+                    <div
+                        class="card pt-6 pb-5 w-full sm:w-[100%] md:w-[48%] lg:w-[47%] rounded-xl backdrop-blur-sm shadow-md flex flex-col items-center">
+                        <div class="img w-11/12 h-72">
+                            <figure class="w-full h-full">
+                                <img src="./image/menu-image/img-2.jpg" alt="Juice"
+                                    class="rounded-xl w-full h-full object-cover block">
+                            </figure>
+                        </div>
+                        <div class="card-body pt-5 flex justify-between w-4/5">
+                            <div class="card-heading">
+                                <h3 class="font-medium text-lg sm:text-xl leading-7">Juice</h3>
+                                <p class="pt-2 font-normal text-sm text-[#7E7D7A]">
+                                    Fresh juices with meals
+                                </p>
+                            </div>
+                            <div class="icon text-center">
+                                <p class="font-bold text-lg sm:text-2xl">$3</p>
+                                <a href="#" class="inline-block mt-2 p-3 bg-[#FF902B] rounded-full text-white">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ---------------menu row 2 ------------------>
+                <div
+                    class="menu-2 bg-gradient-to-b from-white/40 to-white/70 pt-8 flex flex-wrap justify-center md:justify-between gap-6 md:gap-x-5">
+                    <!-- -------------Card 3------------------ -->
+                    <div
+                        class="card pt-6 pb-5 w-full sm:w-[100%] md:w-[48%] lg:w-[47%] rounded-xl backdrop-blur-sm shadow-md flex flex-col items-center">
+                        <div class="img w-11/12 h-72">
+                            <figure class="w-full h-full">
+                                <img src="./image/menu-image/img-3.jpg" alt="Salad"
+                                    class="rounded-xl w-full h-full object-cover block">
+                            </figure>
+                        </div>
+                        <div class="card-body pt-5 flex justify-between w-4/5">
+                            <div class="card-heading">
+                                <h3 class="font-medium text-lg sm:text-xl leading-7">Salad</h3>
+                                <p class="pt-2 font-normal text-sm text-[#7E7D7A]">
+                                    Fresh Salad
+                                </p>
+                            </div>
+                            <div class="icon text-center">
+                                <p class="font-bold text-lg sm:text-2xl">$5</p>
+                                <a href="#" class="inline-block mt-2 p-3 bg-[#FF902B] rounded-full text-white">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-----------Card 4 ---------->
+                    <div
+                        class="card pt-6 pb-5 w-full sm:w-[100%] md:w-[48%] lg:w-[47%] rounded-xl backdrop-blur-sm shadow-md flex flex-col items-center">
+                        <div class="img w-11/12 h-72">
+                            <figure class="w-full h-full">
+                                <img src="./image/menu-image/img-4.png" alt="Sandwich"
+                                    class="rounded-xl w-full h-full object-cover block">
+                            </figure>
+                        </div>
+                        <div class="card-body pt-5 flex justify-between w-4/5">
+                            <div class="card-heading">
+                                <h3 class="font-medium text-lg sm:text-xl leading-7">Sandwich</h3>
+                                <p class="pt-2 font-normal text-sm text-[#7E7D7A]">
+                                    Vegetable Salad
+                                </p>
+                            </div>
+                            <div class="icon text-center">
+                                <p class="font-bold text-lg sm:text-2xl">$6</p>
+                                <a href="#" class="inline-block mt-2 p-3 bg-[#FF902B] rounded-full text-white">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-----------repeat image------------------------ -->
+        <div class="image absolute -z-10 right-10 bottom-[50%] sm:bottom-[70%] md:bottom-[80%]">
+            <figure>
+                <img src="./image/repeat-image.png" alt="coco_img" class="block w-16 sm:w-20 md:w-48 lg:w-48 xl:w-48">
+            </figure>
+        </div>
+    </section>
+
+    <!-- --------menu section end--------------- -->
+    <!-- -------main end-------------- -->
+
+
+    <!-- -------footer start------------ -->
+    <footer class="w-full pt-14 pb-14">
+        <div class="container mx-auto px-6 sm:px-10 md:px-16 lg:px-20">
+            <div
+                class="footer-layout w-full h-[300px] sm:h-[350px] md:h-[400px] lg:h-[500px] bg-[url('./image/footer-image/img-1.jpg')] bg-cover bg-center bg-no-repeat flex items-center justify-center rounded-3xl">
+                <div class="input-area w-4/5 sm:w-3/5 relative">
+                    <input type="email" placeholder="Email Address"
+                        class="w-full p-4 md:p-5 bg-white rounded-full text-sm md:text-base shadow-md outline-none focus:ring-2 focus:ring-[#F2B133]">
+                    <div class="button-area">
+                        <a href="#"
+                            class="bg-[#F2B133] px-6 py-2 sm:px-8 sm:py-3 text-white text-center text-sm sm:text-base font-semibold inline-block w-fit rounded-full shadow-[0px_4px_32px_0px_#DFC37C40] absolute right-2 sm:right-3 bottom-[50%] translate-y-2/4">
+                            Order Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- --------footer end------------ -->
+
+    <script>
+        let toggler = document.querySelector("#toggler");
+        let navMenu = document.querySelector(".nav-links");
+
+        toggler.addEventListener('click', listDisplay)
+
+        function listDisplay() {
+            navMenu.classList.toggle('hidden')
+        }
+    </script>
+
+</body>
+
+</html>
